@@ -1,9 +1,9 @@
 # Práctica 2 - Geometria
 
-# Descripción
+## Descripción
 Se quiere construir una estrella de David en OpenGL.
 
-# Requisitos
+## Requisitos
  * Título: Estrella de David
  * Dimensiones del área de dibujo: 400x400 px
  * Color de fondo: RGB (1,1,1)
