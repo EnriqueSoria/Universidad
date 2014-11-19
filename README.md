@@ -5,5 +5,6 @@ En muchas ocasiones no voy a poder colgar el pdf con la tarea de la práctica po
 No voy a colgar *todas* las prácticas de *todas* las asignaturas; muchas de ellas no tiene sentido subirlas a GitHub.
 
 ## Listado de asignaturas
- * *ALM*: Algorítmica
- * *SGI*: Sistemas gráficos interactivos
+ * **ALM**: Algorítmica
+ * **SGI**: Sistemas Gráficos Interactivos
+ * **TIA**: Técnicas y algoritmos de Inteligencia Artificial
