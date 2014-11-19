@@ -28,13 +28,13 @@ text = f.read ( )
 
 print 'Leyendo el fichero...'
 
-# Eliminar signes de puntuació i passant-ho a minúscules
-text.lower ( )                         # Text a minúscules
-text = re.sub ( '[^\w ]', ' ', text )  # Eliminem signes de puntuació i els canviem per espais
+''' Eliminar signes de puntuaciÃ³ i passant-ho a minÃºscules '''
+text.lower ( )                         # Text a minÃºscules
+text = re.sub ( '[^\w ]', ' ', text )  # Eliminem signes de puntuaciÃ³ i els canviem per espais
 text = text.replace ( '  ', ' ' )      # Eliminem doble espaiament
 paraules = text.split ( )
 
-# Eliminar stop-words
+''' Eliminar stop-words '''
 def removeAll ( list, value ):
     while value in list:
         list.remove ( value )
@@ -43,7 +43,7 @@ def removeAll ( list, value ):
 for paraula in paraules:
     removeAll ( paraules, paraula )
 
-#---- Análisis per parelles de paraules ----#
+''' ---- AnÃ¡lisis per parelles de paraules ---- '''
 d = dict ( )
 for i in xrange ( 1, len ( paraules ) ):
     key = paraules [ i - 1 ] + ' ' + paraules [ i ]
@@ -59,15 +59,15 @@ for i in xrange ( 1, len ( paraules ) ):
         else:
             d [ key ] = 1
 
-print u'Paraules i freqüència: '
+print u'Paraules i freqÃ¼Ã¨ncia: '
 for k, v in sorted ( d.items ( ) ):
     print '{:<25}{:>15}'.format ( k, v )
 
-print u'\n\nAra ordenat per freqüència: '
+print u'\n\nAra ordenat per freqÃ¼Ã¨ncia: '
 for k, v in sorted ( [ (v, k) for k, v in d.items ( ) ], reverse=True ):
     print '{:<5}{:<15}'.format ( k, v )
 
-#---- Análisis per parelles de lletres ----#
+''' ---- AnÃ¡lisis per parelles de lletres ---- '''
 d = dict ( )
 for i in xrange ( 1, len ( text ) ):
     key = text [ i - 1 ] + '' + text [ i ]
@@ -83,10 +83,10 @@ for i in xrange ( 1, len ( text ) ):
         else:
             d [ key ] = 1
 
-print u'Lletres i freqüència: '
+print u'Lletres i freqÃ¼Ã¨ncia: '
 for k, v in sorted ( d.items ( ) ):
     print '{:<25}{:>15}'.format ( k, v )
 
-print u'\n\nAra ordenat per freqüència: '
+print u'\n\nAra ordenat per freqÃ¼Ã¨ncia: '
 for k, v in sorted ( [ (v, k) for k, v in d.items ( ) ], reverse=True ):
     print '{:<5}{:<15}'.format ( k, v )
