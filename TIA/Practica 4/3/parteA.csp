@@ -1,0 +1,93 @@
+##### 2.11 Policias
+#
+#	Dado el siguiente criptograma:
+#		A B C D
+#		D C B A
+#	  + * * * *
+#	  ---------
+#	  1 2 3 0 0
+#
+#	obtener el valor de las cifras 
+#	sabiendo que:
+#		* ABCD es un número de cuatro
+#			cifras consecutivas.
+#		* DCBA: mismas cifras, orden 
+#			inverso.
+#		* ****: mismas cifras, orden 
+#			desconocido.
+#
+
+##########################################
+###   Requetes, Parametres et Options  ###
+##########################################
+ 
+\alpha = 					0.1;
+\filtering : 				f ;
+\search : 					rfla , all_solutions;
+\static_labeling_order :	smallest_domain;
+\verbose : 					display_solutions;
+
+##############################
+###       VARIABLES        ###
+############################## 
+
+\vi : 	
+		# Las variables ABCD
+		A,B,C,D,	
+		
+		# Los * * * *
+		x1,x2,x3,x4 
+		
+		# Rango[0,9] por ejemplo
+		0..9 ;
+
+##############################
+###      CONTRAINTES       ###
+############################## 
+
+# ABCD es un número de cuatro cifras
+#	consecutivas, crecientemente
+\ci: a1 , A+1=B;
+\ci: a2 , B+1=C;
+\ci: a3 , C+1=D;
+
+# Especificamos la funcion
+\ci: a4 , 12300 = 
+		(x1+A+D)*1000 +
+		(x2+B+C)*100  +
+		(x3+C+B)*10   +
+		(x4+D+A)
+;
+
+# Restringimos cada numero
+\doc: X1
+	\ci : x1A , x1=A; \or
+	\ci : x1B , x1=B; \or
+	\ci : x1C , x1=C; \or
+	\ci : x1D , x1=D;
+;
+\doc: X2
+	\ci : x2A , x2=A; \or
+	\ci : x2B , x2=B; \or
+	\ci : x2C , x2=C; \or
+	\ci : x2D , x2=D;
+;
+\doc: X3
+	\ci : x3A , x3=A; \or
+	\ci : x3B , x3=B; \or
+	\ci : x3C , x3=C; \or
+	\ci : x3D , x3=D;
+;
+\doc: X4
+	\ci : x4A , x4=A; \or
+	\ci : x4B , x4=B; \or
+	\ci : x4C , x4=C; \or
+	\ci : x4D , x4=D;
+;
+
+# Las variables x* deben ser distintas 
+#	entre si, para asegurarse que se
+# 	corresponda cada una en A,B,C o D.
+\cim : xx , <> (x1,x2,x3,x4);
+
+

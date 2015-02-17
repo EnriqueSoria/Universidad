@@ -1,0 +1,42 @@
+##### 2.11 Policias
+#
+#	Dado el siguiente criptograma:
+#		A B C D
+#		D C B A
+#	  + * * * *
+#	  ---------
+#	  1 2 3 0 0
+#
+#	obtener el valor de las cifras 
+#	sabiendo que:
+#		* 1AB*20=CD*58
+#
+
+##########################################
+###   Requetes, Parametres et Options  ###
+##########################################
+ 
+\alpha = 					0.1;
+\filtering : 				f ;
+\search : 					rfla , all_solutions;
+\static_labeling_order :	smallest_domain;
+\verbose : 					display_solutions;
+
+##############################
+###       VARIABLES        ###
+############################## 
+
+\vi : 	
+		# Las variables ABCD
+		A,B,C,D
+		
+		# Rango [1,9]
+		1..9 ;
+
+##############################
+###      CONTRAINTES       ###
+############################## 
+
+# Formula
+#\ci : a1 , A*B*20 = C*D*58;
+\ci : sol, (100+A*10+B)*20 = (C*10+D)*58;
