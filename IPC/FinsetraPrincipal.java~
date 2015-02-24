@@ -1,0 +1,26 @@
+package es.upv.etsinf.ipc;
+
+import com.trolltech.qt.gui.*;
+
+public class FinsetraPrincipal extends QMainWindow {
+
+    Ui_FinsetraPrincipal ui = new Ui_FinsetraPrincipal();
+
+    public static void main(String[] args) {
+        QApplication.initialize(args);
+
+        FinsetraPrincipal testFinsetraPrincipal = new FinsetraPrincipal();
+        testFinsetraPrincipal.show();
+
+        QApplication.exec();
+    }
+
+    public FinsetraPrincipal() {
+        ui.setupUi(this);
+    }
+
+    public FinsetraPrincipal(QWidget parent) {
+        super(parent);
+        ui.setupUi(this);
+    }
+}

@@ -1,0 +1,179 @@
+/********************************************************************************
+** Form generated from reading ui file 'FinsetraPrincipal.jui'
+**
+** Created: vie 17. may 09:01:04 2013
+**      by: Qt User Interface Compiler version 4.5.2
+**
+** WARNING! All changes made in this file will be lost when recompiling ui file!
+********************************************************************************/
+
+package es.upv.etsinf.ipc;
+
+import com.trolltech.qt.core.*;
+import com.trolltech.qt.gui.*;
+
+public class Ui_FinsetraPrincipal implements com.trolltech.qt.QUiForm<QMainWindow>
+{
+    public QAction actionObrir_arxiu;
+    public QAction actionObrir_arxiu_avan_at;
+    public QAction actionEixir;
+    public QAction actionPujar_volum;
+    public QAction actionBaixar_volum;
+    public QAction actionSilenciar;
+    public QAction action_Pantalla_completa;
+    public QAction action_Sobre_l_aplicaci;
+    public QWidget centralwidget;
+    public QVBoxLayout verticalLayout;
+    public QGraphicsView graphicsView;
+    public QHBoxLayout horizontalLayout;
+    public QCommandLinkButton commandLinkButton;
+    public QCommandLinkButton commandLinkButton_2;
+    public QCommandLinkButton commandLinkButton_3;
+    public QSlider horizontalSlider;
+    public QWidget widget;
+    public QMenuBar menubar;
+    public QMenu menuArxiu;
+    public QMenu menuOpcions;
+    public QMenu menuSobre;
+    public QStatusBar statusbar;
+
+    public Ui_FinsetraPrincipal() { super(); }
+
+    public void setupUi(QMainWindow FinsetraPrincipal)
+    {
+        FinsetraPrincipal.setObjectName("FinsetraPrincipal");
+        FinsetraPrincipal.resize(new QSize(800, 600).expandedTo(FinsetraPrincipal.minimumSizeHint()));
+        actionObrir_arxiu = new QAction(FinsetraPrincipal);
+        actionObrir_arxiu.setObjectName("actionObrir_arxiu");
+        actionObrir_arxiu_avan_at = new QAction(FinsetraPrincipal);
+        actionObrir_arxiu_avan_at.setObjectName("actionObrir_arxiu_avan_at");
+        actionEixir = new QAction(FinsetraPrincipal);
+        actionEixir.setObjectName("actionEixir");
+        actionPujar_volum = new QAction(FinsetraPrincipal);
+        actionPujar_volum.setObjectName("actionPujar_volum");
+        actionBaixar_volum = new QAction(FinsetraPrincipal);
+        actionBaixar_volum.setObjectName("actionBaixar_volum");
+        actionSilenciar = new QAction(FinsetraPrincipal);
+        actionSilenciar.setObjectName("actionSilenciar");
+        action_Pantalla_completa = new QAction(FinsetraPrincipal);
+        action_Pantalla_completa.setObjectName("action_Pantalla_completa");
+        action_Sobre_l_aplicaci = new QAction(FinsetraPrincipal);
+        action_Sobre_l_aplicaci.setObjectName("action_Sobre_l_aplicaci");
+        centralwidget = new QWidget(FinsetraPrincipal);
+        centralwidget.setObjectName("centralwidget");
+        verticalLayout = new QVBoxLayout(centralwidget);
+        verticalLayout.setObjectName("verticalLayout");
+        graphicsView = new QGraphicsView(centralwidget);
+        graphicsView.setObjectName("graphicsView");
+
+        verticalLayout.addWidget(graphicsView);
+
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout.setObjectName("horizontalLayout");
+        commandLinkButton = new QCommandLinkButton(centralwidget);
+        commandLinkButton.setObjectName("commandLinkButton");
+        commandLinkButton.setMaximumSize(new QSize(50, 50));
+        QFont font = new QFont();
+        font.setFamily("Segoe UI");
+        font.setPointSize(1);
+        commandLinkButton.setFont(font);
+        commandLinkButton.setIcon(new QIcon(new QPixmap("classpath:icons/arrere.png")));
+        commandLinkButton.setIconSize(new QSize(30, 20));
+
+        horizontalLayout.addWidget(commandLinkButton);
+
+        commandLinkButton_2 = new QCommandLinkButton(centralwidget);
+        commandLinkButton_2.setObjectName("commandLinkButton_2");
+        commandLinkButton_2.setMinimumSize(new QSize(0, 0));
+        commandLinkButton_2.setMaximumSize(new QSize(50, 50));
+        QFont font1 = new QFont();
+        font1.setFamily("Segoe UI");
+        font1.setPointSize(1);
+        commandLinkButton_2.setFont(font1);
+        commandLinkButton_2.setIcon(new QIcon(new QPixmap("classpath:icons/Play_48x48.png")));
+        commandLinkButton_2.setIconSize(new QSize(30, 20));
+
+        horizontalLayout.addWidget(commandLinkButton_2);
+
+        commandLinkButton_3 = new QCommandLinkButton(centralwidget);
+        commandLinkButton_3.setObjectName("commandLinkButton_3");
+        commandLinkButton_3.setMaximumSize(new QSize(50, 50));
+        commandLinkButton_3.setIcon(new QIcon(new QPixmap("classpath:icons/avant.png")));
+        commandLinkButton_3.setIconSize(new QSize(30, 20));
+
+        horizontalLayout.addWidget(commandLinkButton_3);
+
+        horizontalSlider = new QSlider(centralwidget);
+        horizontalSlider.setObjectName("horizontalSlider");
+        horizontalSlider.setOrientation(com.trolltech.qt.core.Qt.Orientation.Horizontal);
+
+        horizontalLayout.addWidget(horizontalSlider);
+
+        widget = new QWidget(centralwidget);
+        widget.setObjectName("widget");
+
+        horizontalLayout.addWidget(widget);
+
+
+        verticalLayout.addLayout(horizontalLayout);
+
+        FinsetraPrincipal.setCentralWidget(centralwidget);
+        menubar = new QMenuBar(FinsetraPrincipal);
+        menubar.setObjectName("menubar");
+        menubar.setGeometry(new QRect(0, 0, 800, 22));
+        menuArxiu = new QMenu(menubar);
+        menuArxiu.setObjectName("menuArxiu");
+        menuOpcions = new QMenu(menubar);
+        menuOpcions.setObjectName("menuOpcions");
+        menuSobre = new QMenu(menubar);
+        menuSobre.setObjectName("menuSobre");
+        FinsetraPrincipal.setMenuBar(menubar);
+        statusbar = new QStatusBar(FinsetraPrincipal);
+        statusbar.setObjectName("statusbar");
+        FinsetraPrincipal.setStatusBar(statusbar);
+
+        menubar.addAction(menuArxiu.menuAction());
+        menubar.addAction(menuOpcions.menuAction());
+        menubar.addAction(menuSobre.menuAction());
+        menuArxiu.addAction(actionObrir_arxiu);
+        menuArxiu.addAction(actionObrir_arxiu_avan_at);
+        menuArxiu.addSeparator();
+        menuArxiu.addAction(actionEixir);
+        menuOpcions.addAction(actionPujar_volum);
+        menuOpcions.addAction(actionBaixar_volum);
+        menuOpcions.addAction(actionSilenciar);
+        menuOpcions.addAction(action_Pantalla_completa);
+        menuSobre.addAction(action_Sobre_l_aplicaci);
+        retranslateUi(FinsetraPrincipal);
+
+        FinsetraPrincipal.connectSlotsByName();
+    } // setupUi
+
+    void retranslateUi(QMainWindow FinsetraPrincipal)
+    {
+        FinsetraPrincipal.setWindowTitle(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "MainWindow", null));
+        actionObrir_arxiu.setText(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "&Obrir arxiu", null));
+        actionObrir_arxiu.setShortcut(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "Ctrl+O", null));
+        actionObrir_arxiu_avan_at.setText(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "Obrir arxiu avan\u00e7at", null));
+        actionObrir_arxiu_avan_at.setShortcut(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "Ctrl+Shift+O", null));
+        actionEixir.setText(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "Eixir", null));
+        actionEixir.setShortcut(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "Ctrl+S", null));
+        actionPujar_volum.setText(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "Pujar volum", null));
+        actionPujar_volum.setShortcut(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "+", null));
+        actionBaixar_volum.setText(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "Baixar volum", null));
+        actionBaixar_volum.setShortcut(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "-", null));
+        actionSilenciar.setText(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "&Silenciar", null));
+        actionSilenciar.setShortcut(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "Ctrl+0", null));
+        action_Pantalla_completa.setText(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "&Pantalla completa", null));
+        action_Pantalla_completa.setShortcut(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "Ctrl+Alt+Return", null));
+        action_Sobre_l_aplicaci.setText(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "&Sobre l'aplicaci\u00f3", null));
+        commandLinkButton.setText("");
+        commandLinkButton_2.setText("");
+        commandLinkButton_3.setText("");
+        menuArxiu.setTitle(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "Arxiu", null));
+        menuOpcions.setTitle(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "Opcions", null));
+        menuSobre.setTitle(com.trolltech.qt.core.QCoreApplication.translate("FinsetraPrincipal", "Sobre", null));
+    } // retranslateUi
+
+}
+

@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0" language="jambi">
+ <class>FinestraPrincipal</class>
+ <widget class="QMainWindow" name="FinestraPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>810</width>
+    <height>471</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="barraBusqueda">
+      <item>
+       <widget class="QLabel" name="etiquetaBusqueda">
+        <property name="text">
+         <string>Cerca        </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="editBusqueda"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="botoBusqueda">
+        <property name="text">
+         <string>Buscar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="botoCancelaBusqueda">
+        <property name="text">
+         <string>Cancelar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="barraReemplaza">
+      <item>
+       <widget class="QLabel" name="etiquetaReemplaza">
+        <property name="text">
+         <string>Reemplaça</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="editReemplaza"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="botoReemplaza">
+        <property name="text">
+         <string>Reemplaçar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="botoReemplazaTots">
+        <property name="text">
+         <string>Reemp. tots</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>810</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>&amp;Arxiu</string>
+    </property>
+    <addaction name="actionNou"/>
+    <addaction name="action_Obrir"/>
+    <addaction name="actionGuardar"/>
+    <addaction name="actionGuardar_com"/>
+    <addaction name="separator"/>
+    <addaction name="action_Imprimir"/>
+    <addaction name="separator"/>
+    <addaction name="actionNombre_de_paraules"/>
+    <addaction name="actionNombre_de_car_cters"/>
+    <addaction name="separator"/>
+    <addaction name="action_Sortir"/>
+   </widget>
+   <widget class="QMenu" name="menuEditar">
+    <property name="title">
+     <string>&amp;Editar</string>
+    </property>
+    <addaction name="action_Desfer"/>
+    <addaction name="action_Refer"/>
+    <addaction name="action_Retallar"/>
+    <addaction name="action_Copiar"/>
+    <addaction name="action_Pegar"/>
+    <addaction name="separator"/>
+    <addaction name="action_Cercar"/>
+    <addaction name="action_Reempla_ar"/>
+    <addaction name="action_Selecciona_ho_tot"/>
+    <addaction name="separator"/>
+    <addaction name="action_Insertar_data"/>
+   </widget>
+   <widget class="QMenu" name="menuAcerca_de">
+    <property name="title">
+     <string>&amp;Sobre</string>
+    </property>
+    <addaction name="action_Sobre"/>
+   </widget>
+   <widget class="QMenu" name="menuFormato">
+    <property name="title">
+     <string>&amp;Format</string>
+    </property>
+    <addaction name="action_B"/>
+    <addaction name="action_I"/>
+    <addaction name="action_U"/>
+    <addaction name="separator"/>
+    <addaction name="action_Augmentar_tamany"/>
+    <addaction name="action_Reduir_tamany"/>
+    <addaction name="separator"/>
+    <addaction name="action_Editor_de_Java"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuEditar"/>
+   <addaction name="menuFormato"/>
+   <addaction name="menuAcerca_de"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNou"/>
+   <addaction name="action_Obrir"/>
+   <addaction name="actionGuardar"/>
+   <addaction name="action_Imprimir"/>
+   <addaction name="separator"/>
+   <addaction name="action_Retallar"/>
+   <addaction name="action_Copiar"/>
+   <addaction name="action_Pegar"/>
+   <addaction name="action_Desfer"/>
+   <addaction name="action_Refer"/>
+   <addaction name="separator"/>
+   <addaction name="action_B"/>
+   <addaction name="action_I"/>
+   <addaction name="action_U"/>
+   <addaction name="action_Augmentar_tamany"/>
+   <addaction name="action_Reduir_tamany"/>
+   <addaction name="separator"/>
+   <addaction name="action_Cercar"/>
+   <addaction name="action_Reempla_ar"/>
+   <addaction name="separator"/>
+   <addaction name="action_Editor_de_Java"/>
+   <addaction name="action_Insertar_data"/>
+  </widget>
+  <action name="actionNou">
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/New_48x48.png</normaloff>classpath:src/icons/New_48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Nou</string>
+   </property>
+   <property name="toolTip">
+    <string>Nou document</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/Save_48x48.png</normaloff>classpath:src/icons/Save_48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Guardar</string>
+   </property>
+   <property name="toolTip">
+    <string>Guardar el archivo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionGuardar_com">
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/Save_48x48.png</normaloff>classpath:src/icons/Save_48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar com...</string>
+   </property>
+   <property name="toolTip">
+    <string>Guarda l'arxiu amb un altre nom</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="action_Obrir">
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/Open_48x48.png</normaloff>classpath:src/icons/Open_48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Obrir</string>
+   </property>
+   <property name="toolTip">
+    <string>Obrir un arxiu</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_Retallar">
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/Cut_48x48.png</normaloff>classpath:src/icons/Cut_48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Re&amp;tallar</string>
+   </property>
+   <property name="toolTip">
+    <string>Retallar el text seleccionat</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="action_Copiar">
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/Copy_48x48.png</normaloff>classpath:src/icons/Copy_48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;C&amp;opiar</string>
+   </property>
+   <property name="toolTip">
+    <string>Copiar el text seleccionat</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="action_Pegar">
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/Paste_48x48.png</normaloff>classpath:src/icons/Paste_48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Pegar</string>
+   </property>
+   <property name="toolTip">
+    <string>Pegar el text que està en el porta-retalls</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_Cercar">
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/Search_48x48.png</normaloff>classpath:src/icons/Search_48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Cercar</string>
+   </property>
+   <property name="toolTip">
+    <string>Cercar al text</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="action_Reempla_ar">
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/Preview_48x48.png</normaloff>classpath:src/icons/Preview_48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;R&amp;eemplaçar</string>
+   </property>
+   <property name="toolTip">
+    <string>Reemplaça un text per un altre</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+F</string>
+   </property>
+  </action>
+  <action name="action_Sobre">
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/Help_48x48.png</normaloff>classpath:src/icons/Help_48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Sobre...</string>
+   </property>
+   <property name="toolTip">
+    <string>Informació sobre el programa</string>
+   </property>
+  </action>
+  <action name="action_Desfer">
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/Undo_48x48.png</normaloff>classpath:src/icons/Undo_48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Desfer</string>
+   </property>
+   <property name="toolTip">
+    <string>Desfer l'última acció</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="action_Refer">
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/Redo_48x48.png</normaloff>classpath:src/icons/Redo_48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Refer</string>
+   </property>
+   <property name="toolTip">
+    <string>Refer l'última acció desfeta</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="action_Selecciona_ho_tot">
+   <property name="text">
+    <string>&amp;Selecciona-ho tot</string>
+   </property>
+   <property name="toolTip">
+    <string>Selecciona-ho tot</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="action_Sortir">
+   <property name="text">
+    <string>&amp;Sortir</string>
+   </property>
+   <property name="toolTip">
+    <string>Sortir del programa</string>
+   </property>
+  </action>
+  <action name="action_Editor_de_Java">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/Edit_48x48.png</normaloff>classpath:src/icons/Edit_48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Editor de &amp;Java</string>
+   </property>
+   <property name="toolTip">
+    <string>Activa el mode editor de Java</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+J</string>
+   </property>
+  </action>
+  <action name="action_Insertar_data">
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/Calendar_48x48.png</normaloff>classpath:src/icons/Calendar_48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Insertar data</string>
+   </property>
+   <property name="toolTip">
+    <string>Insertar la data d'avui</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="action_Imprimir">
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/Print_48x48.png</normaloff>classpath:src/icons/Print_48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Imprimir</string>
+   </property>
+   <property name="toolTip">
+    <string>Imprimir el document</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="action_B">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/bold.png</normaloff>classpath:src/icons/bold.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Negreta</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Negreta&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="action_I">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/italic.png</normaloff>classpath:src/icons/italic.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Itàlica</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Italica&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="action_U">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/underlined.png</normaloff>classpath:src/icons/underlined.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Subratllat</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Subratllat&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="action_Augmentar_tamany">
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/Zoom In_48x48.png</normaloff>classpath:src/icons/Zoom In_48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Augmentar tamany</string>
+   </property>
+   <property name="toolTip">
+    <string>Augmenta el tamany del text</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl++</string>
+   </property>
+  </action>
+  <action name="action_Reduir_tamany">
+   <property name="icon">
+    <iconset>
+     <normaloff>classpath:src/icons/Zoom Out_48x48.png</normaloff>classpath:src/icons/Zoom Out_48x48.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Reduïr tamany</string>
+   </property>
+   <property name="toolTip">
+    <string>Reduïr el tamany del text</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+-</string>
+   </property>
+  </action>
+  <action name="actionNombre_de_paraules">
+   <property name="text">
+    <string>Nombre de &amp;paraules</string>
+   </property>
+  </action>
+  <action name="actionNombre_de_car_cters">
+   <property name="text">
+    <string>Nombre de &amp;caràcters</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
