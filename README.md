@@ -8,6 +8,7 @@ No voy a colgar *todas* las prácticas de *todas* las asignaturas; muchas de ell
  * **ALM**: Algorítmica
  * **BDA**: Bases de datos
  * **CPA**: Computación paralela
+ * **ETC**: Estructuras y tecnología de computadores
  * **SAR**: Sistemas de Almacenamiento y Recuperación de la información.
  * **SGI**: Sistemas Gráficos Interactivos
  * **TIA**: Técnicas y algoritmos de Inteligencia Artificial
