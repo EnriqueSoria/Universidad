@@ -6,6 +6,8 @@ No voy a colgar *todas* las prácticas de *todas* las asignaturas; muchas de ell
 
 ## Listado de asignaturas
  * **ALM**: Algorítmica
+ * **BDA**: Bases de datos
+ * **CPA**: Computación paralela
  * **SAR**: Sistemas de Almacenamiento y Recuperación de la información.
  * **SGI**: Sistemas Gráficos Interactivos
  * **TIA**: Técnicas y algoritmos de Inteligencia Artificial
